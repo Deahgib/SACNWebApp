@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="main.UIWindow">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="1" column-count="9" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="165" y="20" width="919" height="485"/>
+    </constraints>
+    <properties>
+      <enabled value="false"/>
+      <preferredSize width="1000" height="500"/>
+    </properties>
+    <border type="bevel-lowered"/>
+    <children>
+      <component id="45c0" class="javax.swing.JSlider" binding="slider1" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="5" anchor="8" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <maximum value="255"/>
+          <orientation value="1"/>
+          <value value="255"/>
+        </properties>
+        <clientProperties>
+          <JSlider.isFilled class="java.lang.Boolean" value="true"/>
+          <Slider.paintThumbArrowShape class="java.lang.Boolean" value="false"/>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <component id="7836c" class="javax.swing.JSlider" binding="slider2" default-binding="true">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="5" anchor="8" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <maximum value="255"/>
+          <orientation value="1"/>
+          <value value="0"/>
+        </properties>
+        <clientProperties>
+          <JSlider.isFilled class="java.lang.Boolean" value="true"/>
+          <Slider.paintThumbArrowShape class="java.lang.Boolean" value="false"/>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <component id="31d6b" class="javax.swing.JSlider" binding="slider3">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="5" anchor="8" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <maximum value="255"/>
+          <orientation value="1"/>
+          <value value="255"/>
+        </properties>
+        <clientProperties>
+          <JSlider.isFilled class="java.lang.Boolean" value="true"/>
+          <Slider.paintThumbArrowShape class="java.lang.Boolean" value="false"/>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <component id="44d93" class="javax.swing.JSlider" binding="slider4">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="5" anchor="8" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <maximum value="255"/>
+          <orientation value="1"/>
+          <value value="0"/>
+        </properties>
+        <clientProperties>
+          <JSlider.isFilled class="java.lang.Boolean" value="true"/>
+          <Slider.paintThumbArrowShape class="java.lang.Boolean" value="false"/>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <component id="7729c" class="javax.swing.JSlider" binding="slider5">
+        <constraints>
+          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="5" anchor="8" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <maximum value="255"/>
+          <orientation value="1"/>
+          <value value="0"/>
+        </properties>
+        <clientProperties>
+          <JSlider.isFilled class="java.lang.Boolean" value="true"/>
+          <Slider.paintThumbArrowShape class="java.lang.Boolean" value="false"/>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <component id="e2630" class="javax.swing.JSlider" binding="slider6">
+        <constraints>
+          <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="5" anchor="8" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <maximum value="255"/>
+          <orientation value="1"/>
+          <value value="0"/>
+        </properties>
+        <clientProperties>
+          <JSlider.isFilled class="java.lang.Boolean" value="true"/>
+          <Slider.paintThumbArrowShape class="java.lang.Boolean" value="false"/>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <component id="2e745" class="javax.swing.JSlider" binding="slider7">
+        <constraints>
+          <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="5" anchor="8" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <maximum value="255"/>
+          <orientation value="1"/>
+          <value value="0"/>
+        </properties>
+        <clientProperties>
+          <JSlider.isFilled class="java.lang.Boolean" value="true"/>
+          <Slider.paintThumbArrowShape class="java.lang.Boolean" value="false"/>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <component id="9c085" class="javax.swing.JSlider" binding="slider8">
+        <constraints>
+          <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="6" hsize-policy="5" anchor="8" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <maximum value="255"/>
+          <orientation value="1"/>
+          <value value="100"/>
+        </properties>
+        <clientProperties>
+          <JSlider.isFilled class="java.lang.Boolean" value="true"/>
+          <Slider.paintThumbArrowShape class="java.lang.Boolean" value="false"/>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <component id="435ec" class="javax.swing.JSlider" binding="slider9">
+        <constraints>
+          <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="6" hsize-policy="5" anchor="8" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <maximum value="255"/>
+          <orientation value="1"/>
+          <value value="0"/>
+        </properties>
+        <clientProperties>
+          <JSlider.isFilled class="java.lang.Boolean" value="true"/>
+          <Slider.paintThumbArrowShape class="java.lang.Boolean" value="false"/>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+    </children>
+  </grid>
+</form>
