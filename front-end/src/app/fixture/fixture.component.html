@@ -1,0 +1,11 @@
+<p>Fixtures: {{appName}}</p>
+<ul>
+  <li *ngFor="let fixture of fixtures">
+    <span>{{ fixture.id }} - </span>
+    <span>{{ fixture.name }}</span>
+
+    <div *ngFor="let id of fixture.identity"><app-dmx-slider></app-dmx-slider>{{id}}<span></span></div>
+
+  </li>
+</ul>
+

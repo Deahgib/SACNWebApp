@@ -80,8 +80,8 @@ public class Controller {
         // Configure the ResourceHandler. Setting the resource base indicates where the files should be served out of.
         // In this example it is the current directory but it can be configured to anything that the jvm has access to.
         resource_handler.setDirectoriesListed(true);
-        resource_handler.setWelcomeFiles(new String[]{ "Index.html" });
-        resource_handler.setResourceBase("Site");
+        resource_handler.setWelcomeFiles(new String[]{ "index.html" });
+        resource_handler.setResourceBase("front-end/dist/front-end");
 
         // Add the ResourceHandler to the server.
         HandlerList handlers = new HandlerList();
