@@ -1,4 +1,6 @@
 
-<mat-slider [(ngModel)]="value" (input)="onInputChange($event)" vertical="true"></mat-slider>
+  <mat-slider (input)="onInputChange($event.value)" vertical="true" [max]="max" [min]="min" [value]="value"></mat-slider>
 
-<span>{{identity}}</span>
+  <span>{{value / 255 * 100 | number : '1.2-2'}} - {{identity.key}}</span>
+
+

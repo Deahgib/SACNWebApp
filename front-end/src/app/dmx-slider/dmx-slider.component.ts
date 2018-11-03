@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./dmx-slider.component.css']
 })
 export class DmxSliderComponent implements OnInit {
-  identity = "Empty";
+  @Input() identity: any;
   disabled = false;
   invert = false;
   max = 255;
@@ -18,7 +18,12 @@ export class DmxSliderComponent implements OnInit {
   vertical = false;
 
   onInputChange(event: any) {
-    console.log("This is emitted as the thumb slides");
+    console.log("This is emitted as the thumb slides " + event);
+    this.value = event
+      const postedData = { channel: 0, identity: this.identity.key, value: event };
+      this.http.post('/api/patch/fixture/value', postedData).subscribe(result => {
+        console.log(result);
+      }, error => console.log('There was an error: '));
   }
 
   constructor(private http: HttpClient) {}

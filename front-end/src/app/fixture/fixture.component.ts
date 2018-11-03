@@ -11,17 +11,6 @@ import { Patch } from '../patch';
 })
 export class FixtureComponent implements OnInit {
   patch = new Patch();
-  fixtures = [
-    new Fixture(0, "light1"),
-    new Fixture(1, "light2"),
-    new Fixture(2, "light3"),
-    new Fixture(3, "light4"),
-    new Fixture(4, "light5"),
-    new Fixture(5, "light6"),
-    new Fixture(6, "light7"),
-    new Fixture(7, "light8"),
-    new Fixture(8, "light9")
-  ];
 
   constructor(private http: HttpClient) {}
   ngOnInit() {

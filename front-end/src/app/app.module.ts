@@ -1,13 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from '@angular/material/slider';
+
 import { FixtureComponent } from './fixture/fixture.component';
-import { HttpClientModule } from '@angular/common/http';
 import { DmxSliderComponent } from './dmx-slider/dmx-slider.component';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +25,9 @@ import { DmxSliderComponent } from './dmx-slider/dmx-slider.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
+    MatTabsModule,
+    MatSidenavModule,
+    MatToolbarModule,
     HttpClientModule
   ],
   exports: [MatSliderModule],

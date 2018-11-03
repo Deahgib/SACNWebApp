@@ -1,11 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    {{ title }}!
-  </h1>
-</div>
 
 
-<app-fixture></app-fixture>
+
+
+<mat-sidenav-container class="example-container" *ngIf="shouldRun">
+  <mat-sidenav mode="side" opened>Sidenav content</mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>{{title}}</mat-toolbar>
+    <app-fixture></app-fixture>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
 
 <router-outlet></router-outlet>
