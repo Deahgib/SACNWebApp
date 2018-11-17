@@ -1,4 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #999966;}
+body { margin: 0; }
+
+
+.channel-cell{
+  height: 75px;
+  width: 75px;
+}
+
+.channel-group{
+  padding-right:0px;
+  padding-left:0px;
+}
+
+.fader-group{
+  padding-right: 0px;
+  padding-left:  0px;
+}
+
+.fader-component{
+  padding-right: 0px;
+  padding-left:  0px;
+}

@@ -12,13 +12,25 @@ import { AppComponent } from './app.component';
 
 import { FixtureComponent } from './fixture/fixture.component';
 import { DmxSliderComponent } from './dmx-slider/dmx-slider.component';
+import { MemoriesComponent } from './memories/memories.component';
+import { NewComponent } from './memories/new/new.component';
+import { LiveComponent } from './memories/live/live.component';
+import { PatchComponent } from './patch/patch.component';
+import { AddressesComponent } from './patch/addresses/addresses.component';
+import { DmxComponent } from './patch/dmx/dmx.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FixtureComponent,
-    DmxSliderComponent
+    DmxSliderComponent,
+    MemoriesComponent,
+    NewComponent,
+    LiveComponent,
+    PatchComponent,
+    AddressesComponent,
+    DmxComponent
   ],
   imports: [
     BrowserModule,

@@ -28,6 +28,8 @@ public class PatchGetFixturesServlet extends HttpServlet
 
         JSONArray json = new JSONArray();
 
+        patch.updateLiveDMXOutput();
+
         ArrayList<Fixture> fixtures = patch.getFixtures();
         for (Fixture fixture : fixtures){
             JSONObject fix = new JSONObject();
@@ -39,8 +41,9 @@ public class PatchGetFixturesServlet extends HttpServlet
             JSONArray ids = new JSONArray();
             for (PatchIdentity type : fixture.identity.keySet()){
                 JSONObject pi = new JSONObject();
-                pi.put("val", fixture.identity.get(type));
+                pi.put("index", fixture.identity.get(type));
                 pi.put("key", type.toString());
+                pi.put("value", (0x00 << 24 | fixture.dmx[fixture.identity.get(type)] & 0xff));
                 ids.put(pi);
             }
             fix.put("identities", ids);

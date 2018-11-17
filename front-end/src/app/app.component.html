@@ -1,15 +1,33 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">{{title}}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/lights">Lights</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/memories">Memories</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/patch">Patch</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" routerLink="/dnc">Day Night Cycle</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
 
 
 
 
-<mat-sidenav-container class="example-container" *ngIf="shouldRun">
-  <mat-sidenav mode="side" opened>Sidenav content</mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar>{{title}}</mat-toolbar>
-    <app-fixture></app-fixture>
-  </mat-sidenav-content>
-</mat-sidenav-container>
-
-
-<router-outlet></router-outlet>

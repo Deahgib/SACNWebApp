@@ -30,7 +30,7 @@ public class FixtureValueChangeServlet extends HttpServlet {
 
         for (Fixture fixture : patch.getFixtures()) {
             if (fixture.channel == jObject.getInt("channel")) {
-                fixture.setValue(PatchUtils.getIdentityForString(jObject.getString("identity")), (byte) jObject.getInt("value"));
+                fixture.setValue(PatchUtils.getIdentityForString(jObject.getString("key")), (byte) jObject.getInt("value"));
             }
         }
     }
